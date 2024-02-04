@@ -1,0 +1,1336 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2024-02-04 15:39:55
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.00 seconds (should be max 0.05)
+	at net.minecraft.world.level.Level.m_6522_(Level.java:179) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.Level.m_6325_(Level.java:174) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at com.sk89q.worldedit.forge.ForgeWorld.getBlock(ForgeWorld.java:551) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.cache.LastAccessExtentCache.getBlock(LastAccessExtentCache.java:54) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.reorder.MultiStageReorder.setBlock(MultiStageReorder.java:229) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.reorder.ChunkBatchingExtent$1.resume(ChunkBatchingExtent.java:103) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.function.operation.OperationQueue.resume(OperationQueue.java:92) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.function.operation.Operations.completeBlindly(Operations.java:74) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.EditSession.internalFlushSession(EditSession.java:938) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.EditSession.undo(EditSession.java:832) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.LocalSession.undo(LocalSession.java:260) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.command.HistoryCommands.undo(HistoryCommands.java:81) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.command.HistoryCommandsRegistration.cmd$undo(HistoryCommandsRegistration.java:133) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.command.HistoryCommandsRegistration$$Lambda$7205/0x00007f4040d9e330.run(Unknown Source) ~[?:?] {}
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at java.lang.invoke.LambdaForm$DMH/0x00007f4040000800.invokeSpecial(LambdaForm$DMH) ~[?:?] {}
+	at java.lang.invoke.LambdaForm$MH/0x00007f40416dc400.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.lang.invoke.LambdaForm$MH/0x00007f4040fd4000.invokeExact_MT(LambdaForm$MH) ~[?:?] {}
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.forge.ForgeWorldEdit.onCommandEvent(ForgeWorldEdit.java:333) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.forge.__ForgeWorldEdit_onCommandEvent_CommandEvent.invoke(.dynamic) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.3.jar%2351!/:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda$4093/0x00007f40409ee130.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%2351!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%2351!/:?] {}
+	at net.minecraft.commands.Commands.m_242674_(Commands.java:232) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_242600_(ServerGamePacketListenerImpl.java:1239) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:1217) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl$$Lambda$11617/0x00007f40415ef5b8.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18693_(BlockableEventLoop.java:68) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop$$Lambda$11344/0x00007f40415925e8.get(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?] {}
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:763) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:131) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_129961_(MinecraftServer.java:746) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_7245_(MinecraftServer.java:740) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18699_(BlockableEventLoop.java:116) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_130012_(MinecraftServer.java:725) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:658) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer$$Lambda$9098/0x00007f4041056958.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:840) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at net.minecraft.world.level.Level.m_6522_(Level.java:179) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.Level.m_6325_(Level.java:174) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at com.sk89q.worldedit.forge.ForgeWorld.getBlock(ForgeWorld.java:551) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.cache.LastAccessExtentCache.getBlock(LastAccessExtentCache.java:54) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.reorder.MultiStageReorder.setBlock(MultiStageReorder.java:229) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extent.reorder.ChunkBatchingExtent$1.resume(ChunkBatchingExtent.java:103) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.function.operation.OperationQueue.resume(OperationQueue.java:92) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.function.operation.Operations.completeBlindly(Operations.java:74) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.EditSession.internalFlushSession(EditSession.java:938) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.EditSession.undo(EditSession.java:832) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.LocalSession.undo(LocalSession.java:260) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.command.HistoryCommands.undo(HistoryCommands.java:81) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.command.HistoryCommandsRegistration.cmd$undo(HistoryCommandsRegistration.java:133) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.command.HistoryCommandsRegistration$$Lambda$7205/0x00007f4040d9e330.run(Unknown Source) ~[?:?] {}
+	at org.enginehub.piston.CommandManager.execute(CommandManager.java:157) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:497) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at java.lang.invoke.LambdaForm$DMH/0x00007f4040000800.invokeSpecial(LambdaForm$DMH) ~[?:?] {}
+	at java.lang.invoke.LambdaForm$MH/0x00007f40416dc400.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.lang.invoke.LambdaForm$MH/0x00007f4040fd4000.invokeExact_MT(LambdaForm$MH) ~[?:?] {}
+	at com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.forge.ForgeWorldEdit.onCommandEvent(ForgeWorldEdit.java:333) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading}
+	at com.sk89q.worldedit.forge.__ForgeWorldEdit_onCommandEvent_CommandEvent.invoke(.dynamic) ~[worldedit-mod-7.2.12.jar%23125!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.3.jar%2351!/:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda$4093/0x00007f40409ee130.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%2351!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%2351!/:?] {}
+	at net.minecraft.commands.Commands.m_242674_(Commands.java:232) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_242600_(ServerGamePacketListenerImpl.java:1239) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:1217) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl$$Lambda$11617/0x00007f40415ef5b8.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18693_(BlockableEventLoop.java:68) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop$$Lambda$11344/0x00007f40415925e8.get(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?] {}
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:763) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:157) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:131) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_129961_(MinecraftServer.java:746) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_7245_(MinecraftServer.java:740) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18699_(BlockableEventLoop.java:116) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_130012_(MinecraftServer.java:725) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:658) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading,pl:accesstransformer:B}
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.9/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.9/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+	at java.base@17.0.9/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@5a6654d5
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@5a6654d5
+	at java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@17.0.9/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=11 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2cf481a6
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2cf481a6
+	at java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.9/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+	at java.base@17.0.9/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+
+"Notification Thread" daemon prio=9 Id=12 RUNNABLE
+
+
+"Thread-0" daemon prio=5 Id=20 TIMED_WAITING
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.6.4/com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:190)
+
+
+"FileSystemWatchService" daemon prio=5 Id=21 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.9/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Timer hack thread" daemon prio=5 Id=23 TIMED_WAITING
+	at java.base@17.0.9/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.Util$9.run(Util.java:673)
+
+
+"luckperms-worker-0" daemon prio=5 Id=29 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-1" daemon prio=5 Id=30 TIMED_WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-2" daemon prio=5 Id=31 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-scheduler" prio=5 Id=33 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1e05e56e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1e05e56e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"WorldEdit Session Manager" prio=5 Id=34 TIMED_WAITING on java.util.TaskQueue@71fd4d8f
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@71fd4d8f
+	at java.base@17.0.9/java.util.TimerThread.mainLoop(Timer.java:563)
+	at java.base@17.0.9/java.util.TimerThread.run(Timer.java:516)
+
+
+"Worker-Main-1" daemon prio=5 Id=37 RUNNABLE
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.unpark(Native Method)
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.unpark(LockSupport.java:177)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.signalWork(ForkJoinPool.java:1603)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool$WorkQueue.push(ForkJoinPool.java:979)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.externalSubmit(ForkJoinPool.java:2194)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:2664)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.util.thread.ProcessorMailbox.m_18760_(ProcessorMailbox.java:131)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:105)
+	...
+
+
+"Worker-Main-2" daemon prio=5 Id=38 WAITING on java.util.concurrent.ForkJoinPool@798c1ba7
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@798c1ba7
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Worker-Main-3" daemon prio=5 Id=39 RUNNABLE
+	at MC-BOOTSTRAP/it.unimi.dsi.fastutil@8.5.6/it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap.get(Long2ObjectOpenHashMap.java:363)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.DataLayerStorageMap.m_75532_(DataLayerStorageMap.java:41)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.LayerLightSectionStorage.m_75761_(LayerLightSectionStorage.java:75)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.LayerLightSectionStorage.m_75758_(LayerLightSectionStorage.java:70)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.LayerLightSectionStorage.m_75791_(LayerLightSectionStorage.java:65)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.LayerLightSectionStorage.m_6716_(LayerLightSectionStorage.java:243)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.SkyLightSectionStorage.m_6716_(SkyLightSectionStorage.java:190)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.lighting.LayerLightEngine.m_5738_(LayerLightEngine.java:157)
+	...
+
+
+"Server thread" prio=5 Id=40 RUNNABLE
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.Level.m_6522_(Level.java:179)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.world.level.Level.m_6325_(Level.java:174)
+	at TRANSFORMER/worldedit@7.2.12+6240-87f4ae1/com.sk89q.worldedit.forge.ForgeWorld.getBlock(ForgeWorld.java:551)
+	at TRANSFORMER/worldedit@7.2.12+6240-87f4ae1/com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68)
+	at TRANSFORMER/worldedit@7.2.12+6240-87f4ae1/com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68)
+	at TRANSFORMER/worldedit@7.2.12+6240-87f4ae1/com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68)
+	at TRANSFORMER/worldedit@7.2.12+6240-87f4ae1/com.sk89q.worldedit.extent.AbstractDelegateExtent.getBlock(AbstractDelegateExtent.java:68)
+	...
+
+
+"Server console handler" daemon prio=5 Id=42 RUNNABLE
+	at java.base@17.0.9/java.io.FileInputStream.read0(Native Method)
+	at java.base@17.0.9/java.io.FileInputStream.read(FileInputStream.java:228)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	...
+
+
+"DestroyJavaVM" prio=5 Id=43 RUNNABLE
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=44 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=45 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.9/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-3" daemon prio=5 Id=46 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7bc700b0
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7bc700b0
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.compensatedBlock(ForkJoinPool.java:3451)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=47 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.9/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-4" daemon prio=5 Id=49 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"MVStore background writer /root/instances/cosmic-continent/config/luckperms/luckperms-h2-v2.mv.db" daemon prio=5 Id=50 TIMED_WAITING on java.lang.Object@4ad8b433
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@4ad8b433
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:3768)
+
+
+"H2-serialization" daemon prio=5 Id=52 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@515219d2
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@515219d2
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"H2-save" daemon prio=5 Id=53 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@481a617c
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@481a617c
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"luckperms-worker-5" daemon prio=5 Id=54 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-6" daemon prio=5 Id=55 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Server Watchdog" daemon prio=5 Id=63 RUNNABLE
+	at java.management@17.0.9/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.9/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:521)
+	at java.management@17.0.9/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:509)
+	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:41)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-64" prio=5 Id=64 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@17.0.9/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:118)
+	at java.base@17.0.9/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	-  locked sun.nio.ch.Util$2@b9b2a4f
+	-  locked sun.nio.ch.EPollSelectorImpl@bcaefc5
+	at java.base@17.0.9/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector.nioSelect(ManagedSelector.java:183)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector.select(ManagedSelector.java:190)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:606)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:543)
+	...
+
+
+"qtp1409455787-65" prio=5 Id=65 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@17.0.9/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:118)
+	at java.base@17.0.9/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	-  locked sun.nio.ch.Util$2@46d7e23
+	-  locked sun.nio.ch.EPollSelectorImpl@6693b12
+	at java.base@17.0.9/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector.nioSelect(ManagedSelector.java:183)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector.select(ManagedSelector.java:190)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:606)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:543)
+	...
+
+
+"qtp1409455787-66-acceptor-0@2aa5323d-ServerConnector@22a3b5ff{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}" prio=3 Id=66 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.ch.Net.accept(Native Method)
+	at java.base@17.0.9/sun.nio.ch.ServerSocketChannelImpl.implAccept(ServerSocketChannelImpl.java:425)
+	at java.base@17.0.9/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:391)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.server.ServerConnector.accept(ServerConnector.java:388)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.server.AbstractConnector$Acceptor.run(AbstractConnector.java:704)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@45307bf5
+
+
+"qtp1409455787-67" prio=5 Id=67 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-68" prio=5 Id=68 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-69" prio=5 Id=69 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-70" prio=5 Id=70 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-71" prio=5 Id=71 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-72" prio=5 Id=72 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"qtp1409455787-73" prio=5 Id=73 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5ebae3ae
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:382)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.idleJobPoll(QueuedThreadPool.java:974)
+	at TRANSFORMER/mtr@1.19.2-3.2.2-hotfix-1/mtr.libraries.org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1018)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Thread-20" daemon prio=5 Id=75 TIMED_WAITING on java.lang.Object@ca16364
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@ca16364
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.AsynchronousQueue.running(AsynchronousQueue.java:121)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.AsynchronousQueue.access$000(AsynchronousQueue.java:9)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.AsynchronousQueue$1.run(AsynchronousQueue.java:83)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Dynmap Render Thread" daemon prio=5 Id=76 WAITING on java.util.concurrent.FutureTask@63d298b5
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.FutureTask@63d298b5
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:447)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.get(FutureTask.java:190)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.forge_1_19_2.DynmapPlugin$ForgeServer.createMapChunkCache(DynmapPlugin.java:886)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$FullWorldRenderState.processTile(MapManager.java:769)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$FullWorldRenderState.run(MapManager.java:728)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$DynmapScheduledThreadPoolExecutor$1.run(MapManager.java:234)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@5b2114eb
+
+
+"Dynmap Render Thread" daemon prio=5 Id=77 WAITING on java.util.concurrent.FutureTask@25fbb8e9
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.FutureTask@25fbb8e9
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:447)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.get(FutureTask.java:190)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.forge_1_19_2.DynmapPlugin$ForgeServer.createMapChunkCache(DynmapPlugin.java:886)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$FullWorldRenderState.processTile(MapManager.java:769)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$FullWorldRenderState.run(MapManager.java:728)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$DynmapScheduledThreadPoolExecutor$1.run(MapManager.java:234)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@6c71d2d0
+
+
+"Dynmap Render Thread" daemon prio=5 Id=78 WAITING on java.util.concurrent.FutureTask@2c55886b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.FutureTask@2c55886b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:447)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.get(FutureTask.java:190)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$CheckWorldTimes.run(MapManager.java:930)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.MapManager$DynmapScheduledThreadPoolExecutor$2.run(MapManager.java:252)
+	at java.base@17.0.9/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.9/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@4b94a53e
+
+
+"Java2D Disposer" daemon prio=10 Id=79 WAITING on java.lang.ref.ReferenceQueue$Lock@2be874c6
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2be874c6
+	at java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.9/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.desktop@17.0.9/sun.java2d.Disposer.run(Disposer.java:145)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"etp1636255589-82" prio=5 Id=82 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-83" prio=5 Id=83 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Session-HouseKeeper-2d60f122-1" prio=5 Id=84 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@244c91b6
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@244c91b6
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"etp1636255589-85" prio=5 Id=85 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=90 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=91 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-7" daemon prio=5 Id=93 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-8" daemon prio=5 Id=94 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Connector-Scheduler-22a3b5ff-1" prio=5 Id=149 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@24da4384
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@24da4384
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	...
+
+
+"etp1636255589-155" prio=5 Id=155 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Connector-Scheduler-654ab1ee-1" prio=5 Id=156 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4cfc4d9d
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4cfc4d9d
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+	at java.base@17.0.9/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	...
+
+
+"etp1636255589-157" prio=5 Id=157 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-158" prio=5 Id=158 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-159" prio=5 Id=159 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-160" prio=5 Id=160 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-161" prio=5 Id=161 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-162" prio=5 Id=162 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-163" prio=5 Id=163 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-164" prio=5 Id=164 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@52dbdb9a
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@52dbdb9a
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1757)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.util.thread.ReservedThreadExecutor$ReservedThread.reservedWait(ReservedThreadExecutor.java:309)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:379)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@695e88e2
+
+
+"etp1636255589-165" prio=5 Id=165 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-166" prio=5 Id=166 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-167" prio=5 Id=167 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-168" prio=5 Id=168 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-169" prio=5 Id=169 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-170" prio=5 Id=170 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-171" prio=5 Id=171 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-172" prio=5 Id=172 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-173" prio=5 Id=173 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-174" prio=5 Id=174 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-175" prio=5 Id=175 RUNNABLE (in native)
+	at java.base@17.0.9/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@17.0.9/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:118)
+	at java.base@17.0.9/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	-  locked sun.nio.ch.Util$2@12da3156
+	-  locked sun.nio.ch.EPollSelectorImpl@64ea86ea
+	at java.base@17.0.9/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:472)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:409)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.util.thread.strategy.EatWhatYouKill.produceTask(EatWhatYouKill.java:360)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:184)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@593993e5
+
+
+"etp1636255589-176" prio=5 Id=176 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-177" prio=5 Id=177 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-178" prio=5 Id=178 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-179" prio=5 Id=179 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-180" prio=5 Id=180 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-181" prio=5 Id=181 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5c88563e
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"etp1636255589-182" prio=5 Id=182 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4ad4bf4f
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4ad4bf4f
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1757)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.util.thread.ReservedThreadExecutor$ReservedThread.reservedWait(ReservedThreadExecutor.java:309)
+	at TRANSFORMER/dynmap@3.7-beta-4-935/org.dynmap.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:379)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@7243403f
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=189 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #4" daemon prio=5 Id=190 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:182)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:290)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:354)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #5" daemon prio=5 Id=191 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #6" daemon prio=5 Id=192 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-9" daemon prio=5 Id=194 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-10" daemon prio=5 Id=195 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Timer-0" prio=5 Id=205 WAITING on java.util.TaskQueue@465faa84
+	at java.base@17.0.9/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@465faa84
+	at java.base@17.0.9/java.lang.Object.wait(Object.java:338)
+	at java.base@17.0.9/java.util.TimerThread.mainLoop(Timer.java:537)
+	at java.base@17.0.9/java.util.TimerThread.run(Timer.java:516)
+
+
+"luckperms-worker-11" daemon prio=5 Id=224 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Netty Epoll Server IO #7" daemon prio=5 Id=247 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:294)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.77.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:351)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at MC-BOOTSTRAP/io.netty.common@4.1.77.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"luckperms-worker-12" daemon prio=5 Id=249 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-13" daemon prio=5 Id=250 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-14" daemon prio=5 Id=253 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"luckperms-worker-15" daemon prio=5 Id=254 WAITING on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@1662857b
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1724)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"worldedit-sort-svc-0" daemon prio=5 Id=262 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"worldedit-sort-svc-1" daemon prio=5 Id=263 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"worldedit-sort-svc-2" daemon prio=5 Id=264 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"worldedit-sort-svc-3" daemon prio=5 Id=265 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54c7398
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.9/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.9/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+	at java.base@17.0.9/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"IO-Worker-236" prio=5 Id=417 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@35a1780d
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@35a1780d
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+	at java.base@17.0.9/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+"IO-Worker-237" prio=5 Id=418 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@35a1780d
+	at java.base@17.0.9/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@35a1780d
+	at java.base@17.0.9/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.9/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+	at java.base@17.0.9/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.9/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.9/java.lang.Thread.run(Thread.java:840)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:56) [server-1.19.2-20220805.130853-srg.jar%23127!/:?] {re:classloading}
+	at java.lang.Thread.run(Thread.java:840) [?:?] {}
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 1, entities: 146,144,86,773,771,3,32 [minecraft:item:84,minecraft:bat:15,minecraft:squid:7,minecraft:glow_squid:6,minecraft:wolf:5], block_entities: 1409 [minecraft:sculk_sensor:742,minecraft:sculk_catalyst:209,minecraft:campfire:122,minecraft:mob_spawner:79,minecraft:shulker_box:76], block_ticks: 3202, fluid_ticks: 36, chunk_source: Chunks[S] W: 4556 E: 146,144,86,773,771,3,32,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Linux (amd64) version 5.15.0-92-generic
+	Java Version: 17.0.9, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Private Build
+	Memory: 1559045584 bytes (1486 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12500
+	Identifier: Intel64 Family 6 Model 151 Stepping 5
+	Microarchitecture: unknown
+	Frequency (GHz): 2.86
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: SVGA II Adapter
+	Graphics card #0 vendor: VMware (0x15ad)
+	Graphics card #0 VRAM (MB): 128.00
+	Graphics card #0 deviceId: 0x0405
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): -0.00
+	Memory slot #0 type: DRAM
+	Virtual memory max (MB): 8064.51
+	Virtual memory used (MB): 5719.73
+	Swap memory total (MB): 4096.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 1 total; -Xmx4G
+	Server Running: true
+	Player Count: 1 / 20; [ServerPlayer['eho'/52336, l='ServerLevel[world]', x=-360.92, y=103.12, z=687.11]]
+	Data Packs: vanilla, file/bukkit (incompatible), mod:luckperms (incompatible), mod:forge, mod:architectury (incompatible), mod:usefulrailroads, mod:uteamcore, mod:mtr (incompatible), mod:simpleplanes (incompatible), mod:ironchest (incompatible), mod:dynmap (incompatible), mod:flywheel (incompatible), mod:effortlessbuilding, mod:cfm (incompatible), mod:exlinefurniture, mod:journeymap (incompatible), mod:worldedit (incompatible), mod:packetfixer (incompatible)
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		server-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: NOSIGNATURE
+		Dynmap-3.7-beta-4-forge-1.19.2.jar                |Dynmap                        |dynmap                        |3.7-beta-4-935      |DONE      |Manifest: NOSIGNATURE
+		worldedit-mod-7.2.12.jar                          |WorldEdit                     |worldedit                     |7.2.12+6240-87f4ae1 |DONE      |Manifest: NOSIGNATURE
+		useful_railroads-1.19.2-1.5.1.47.jar              |Useful Railroads              |usefulrailroads               |1.5.1.47            |DONE      |Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		u_team_core-1.19.2-4.4.3.260.jar                  |U Team Core                   |uteamcore                     |4.4.3.260           |DONE      |Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		simpleplanes-1.19.2-5.2.2.jar                     |Simple Planes                 |simpleplanes                  |1.19.2-5.2.2        |DONE      |Manifest: NOSIGNATURE
+		cfm-7.0.0-pre35-1.19.2.jar                        |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre35         |DONE      |Manifest: NOSIGNATURE
+		architectury-6.5.85-forge.jar                     |Architectury                  |architectury                  |6.5.85              |DONE      |Manifest: NOSIGNATURE
+		MTR-forge-1.19.2-3.2.2-hotfix-1.jar               |Minecraft Transit Railway     |mtr                           |1.19.2-3.2.2-hotfix-|DONE      |Manifest: NOSIGNATURE
+		LuckPerms-Forge-5.4.66.jar                        |LuckPerms                     |luckperms                     |5.4.66              |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.3.0-universal.jar                 |Forge                         |forge                         |43.3.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		PacketFixer-forge-1.2.0-1.19.2.jar                |Packet Fixer                  |packetfixer                   |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.19.2-0.6.10-20.jar               |Flywheel                      |flywheel                      |0.6.10-20           |DONE      |Manifest: NOSIGNATURE
+		exlinefurniture-forge-1.19.2-v2.1.25.jar          |Exline's Furniture Mod        |exlinefurniture               |2.1.25              |DONE      |Manifest: NOSIGNATURE
+		effortlessbuilding-1.19.2-3.5-all.jar             |Effortless Building           |effortlessbuilding            |3.5                 |DONE      |Manifest: NOSIGNATURE
+		journeymap-1.19.2-5.9.7-forge.jar                 |Journeymap                    |journeymap                    |5.9.7               |DONE      |Manifest: NOSIGNATURE
+		ironchest-1.19.2-14.2.7.jar                       |Iron Chests                   |ironchest                     |1.19.2-14.2.7       |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 3871d41e-f4a6-4d2b-a2dd-14937a674b5d
+	FML: 43.3
+	Forge: net.minecraftforge:43.3.0
