@@ -1306,6 +1306,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/black_picket_fence": {
+    "criteria": {
+      "has_concrete": "2024-02-06 16:39:32 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_planks": {
     "criteria": {
       "has_logs": "2023-02-06 15:37:34 +0800"
@@ -3063,6 +3069,12 @@
   "cfm:recipes/cfm/stripped_warped_kitchen_sink_dark": {
     "criteria": {
       "has_bucket": "2024-01-29 15:42:45 +0800"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/black_concrete": {
+    "criteria": {
+      "has_ingredient": "2024-02-06 16:39:32 +0800"
     },
     "done": true
   },
