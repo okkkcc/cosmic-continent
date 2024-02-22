@@ -77,6 +77,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_acacia_table": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/dark_oak_slab": {
     "criteria": {
       "has_planks": "2023-02-09 15:32:43 +0800"
@@ -122,6 +128,12 @@
   "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
     "criteria": {
       "has_stone": "2023-02-10 14:57:53 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/acacia_cabinet": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -200,6 +212,12 @@
   "minecraft:recipes/building_blocks/dark_oak_planks": {
     "criteria": {
       "has_log": "2023-06-06 22:38:14 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/acacia_kitchen_counter": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -290,6 +308,12 @@
   "cfm:recipes/cfm/orange_picket_gate": {
     "criteria": {
       "has_concrete": "2024-01-31 16:50:46 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_acacia_kitchen_counter": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -647,6 +671,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_acacia_crate": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2023-04-02 19:44:50 +0800"
@@ -794,6 +824,12 @@
   "minecraft:recipes/redstone/oak_trapdoor": {
     "criteria": {
       "has_planks": "2023-02-06 12:46:54 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/acacia_park_bench": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -1116,6 +1152,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_desk_cabinet": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/furnace_minecart": {
     "criteria": {
       "has_minecart": "2023-02-10 14:19:05 +0800"
@@ -1326,6 +1368,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_coffee_table": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_bricks_stonecutting": {
     "criteria": {
       "has_stone_bricks": "2023-03-18 18:20:43 +0800"
@@ -1353,6 +1401,12 @@
   "ironchest:recipes/ironchest/upgrades/gold_to_diamond_chest_upgrade": {
     "criteria": {
       "has_glass": "2023-05-17 12:36:51 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_acacia_bedside_cabinet": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -1650,6 +1704,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_acacia_cabinet": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/birch_door": {
     "criteria": {
       "has_planks": "2023-02-06 15:59:51 +0800"
@@ -1761,6 +1821,12 @@
   "cfm:recipes/cfm/acacia_mail_box": {
     "criteria": {
       "has_chest": "2024-02-20 11:36:18 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_acacia_park_bench": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -2082,6 +2148,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_acacia_desk_cabinet": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/birch_mail_box": {
     "criteria": {
       "has_chest": "2024-02-20 11:36:18 +0800"
@@ -2289,6 +2361,12 @@
   "cfm:recipes/cfm/spruce_bedside_cabinet": {
     "criteria": {
       "has_log": "2024-02-04 12:39:27 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_acacia_chair": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -2535,6 +2613,12 @@
   "minecraft:recipes/building_blocks/stripped_birch_wood": {
     "criteria": {
       "has_log": "2023-02-06 16:06:22 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/acacia_crate": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -3030,6 +3114,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/acacia_wood": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_wood": {
     "criteria": {
       "has_log": "2023-04-14 17:56:03 +0800"
@@ -3168,6 +3258,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_blinds": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_wool": {
     "criteria": {
       "has_white_wool": "2023-02-17 17:08:36 +0800"
@@ -3177,6 +3273,12 @@
   "minecraft:recipes/building_blocks/packed_mud": {
     "criteria": {
       "has_mud": "2023-04-06 20:15:31 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/acacia_table": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -3358,6 +3460,12 @@
   "cfm:recipes/cfm/jungle_upgraded_gate": {
     "criteria": {
       "has_gate": "2024-02-06 13:29:00 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/acacia_desk": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -3595,6 +3703,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_acacia_coffee_table": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/jungle_crate": {
     "criteria": {
       "has_log": "2024-02-06 14:22:12 +0800"
@@ -3676,6 +3790,12 @@
   "cfm:recipes/cfm/red_kitchen_sink": {
     "criteria": {
       "has_concrete": "2024-01-24 14:29:18 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/wheat": {
+    "criteria": {
+      "has_hay_block": "2024-02-22 12:38:06 +0800"
     },
     "done": true
   },
@@ -3865,6 +3985,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_bedside_cabinet": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/purple_picket_gate": {
     "criteria": {
       "has_gate": "2024-02-06 13:29:00 +0800"
@@ -4030,6 +4156,12 @@
   "minecraft:recipes/redstone/target": {
     "criteria": {
       "has_redstone": "2023-02-18 22:10:37 +0800"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_acacia_desk": {
+    "criteria": {
+      "has_planks": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
@@ -4453,6 +4585,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_upgraded_fence": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_from_moss_block": {
     "criteria": {
       "has_moss_block": "2023-04-13 16:25:13 +0800"
@@ -4603,6 +4741,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_chair": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/jungle_slab": {
     "criteria": {
       "has_planks": "2023-02-09 15:41:34 +0800"
@@ -4612,6 +4756,12 @@
   "minecraft:recipes/decorations/light_blue_candle": {
     "criteria": {
       "has_light_blue_dye": "2024-01-31 15:17:55 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks": {
+    "criteria": {
+      "has_log": "2024-02-22 12:37:23 +0800"
     },
     "done": true
   },
