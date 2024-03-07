@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/acacia_button": {
     "criteria": {
       "has_planks": "2023-03-18 13:53:20 +0800"
@@ -881,9 +887,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/brown_kitchen_counter": {
     "criteria": {
       "has_concrete": "2024-01-24 14:29:18 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -902,6 +920,12 @@
   "cfm:recipes/cfm/orange_kitchen_counter": {
     "criteria": {
       "has_concrete": "2024-01-24 14:29:18 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -1083,6 +1107,12 @@
   "minecraft:recipes/building_blocks/white_terracotta": {
     "criteria": {
       "has_terracotta": "2023-05-22 21:17:19 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -1452,6 +1482,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2024-03-07 16:31:45 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_sand": "2023-02-18 21:06:26 +0800"
@@ -1530,9 +1566,21 @@
     },
     "done": true
   },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_spruce_table": {
     "criteria": {
       "has_planks": "2024-02-04 12:39:27 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -2478,6 +2526,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2024-03-07 16:31:45 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/purple_kitchen_counter": {
     "criteria": {
       "has_concrete": "2024-01-24 14:29:18 +0800"
@@ -2550,6 +2604,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/spruce_cabinet": {
     "criteria": {
       "has_log": "2024-02-04 12:39:26 +0800"
@@ -2583,6 +2643,12 @@
   "minecraft:recipes/building_blocks/pink_terracotta": {
     "criteria": {
       "has_terracotta": "2023-05-22 21:17:19 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2024-03-07 16:31:45 +0800"
     },
     "done": true
   },
@@ -2757,6 +2823,12 @@
   "cfm:recipes/cfm/light_gray_picket_fence": {
     "criteria": {
       "has_concrete": "2024-02-19 17:34:55 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -3348,6 +3420,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/lime_picket_fence": {
     "criteria": {
       "has_concrete": "2024-01-24 17:40:10 +0800"
@@ -3514,6 +3592,12 @@
   "minecraft:recipes/misc/red_dye_from_tulip": {
     "criteria": {
       "has_red_flower": "2023-02-09 11:54:22 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -3763,6 +3847,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/white_cooler": {
     "criteria": {
       "has_terracotta": "2024-01-29 16:28:56 +0800"
@@ -3808,6 +3898,12 @@
   "minecraft:recipes/decorations/white_bed": {
     "criteria": {
       "has_white_wool": "2023-02-17 17:08:36 +0800"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/stone": {
+    "criteria": {
+      "has_ingredient": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -4015,6 +4111,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/birch_slab": {
     "criteria": {
       "has_planks": "2023-02-06 15:59:51 +0800"
@@ -4096,6 +4198,12 @@
   "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
     "criteria": {
       "has_blue_dye": "2024-01-31 15:18:10 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2024-03-07 16:31:45 +0800"
     },
     "done": true
   },
@@ -4246,6 +4354,12 @@
   "cfm:recipes/cfm/stripped_jungle_kitchen_counter": {
     "criteria": {
       "has_log": "2024-02-06 14:22:12 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
     },
     "done": true
   },
@@ -4618,6 +4732,18 @@
   "minecraft:recipes/redstone/light_weighted_pressure_plate": {
     "criteria": {
       "has_gold_ingot": "2023-04-13 16:05:16 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2024-03-07 16:31:22 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
+    "criteria": {
+      "has_mossy_cobblestone": "2024-03-07 16:31:45 +0800"
     },
     "done": true
   },
@@ -5020,6 +5146,12 @@
   "cfm:recipes/cfm/stripped_jungle_kitchen_sink_light": {
     "criteria": {
       "has_top": "2024-01-24 14:29:18 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2024-03-07 16:31:45 +0800"
     },
     "done": true
   },
