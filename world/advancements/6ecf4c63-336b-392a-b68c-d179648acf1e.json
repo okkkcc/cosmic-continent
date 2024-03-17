@@ -1049,6 +1049,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/light_blue_grill": {
+    "criteria": {
+      "has_terracotta": "2024-03-17 22:31:47 +0800"
+    },
+    "done": true
+  },
   "minecraft:nether/explore_nether": {
     "criteria": {
       "minecraft:soul_sand_valley": "2023-04-06 20:16:11 +0800",
