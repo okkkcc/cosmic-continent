@@ -125,6 +125,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/magenta_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_stained_glass": {
     "criteria": {
       "has_glass": "2023-02-08 03:20:27 +0000"
@@ -605,6 +611,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/blue_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_dark_oak_upgraded_gate": {
     "criteria": {
       "has_gate": "2024-01-25 15:11:17 +0000"
@@ -988,6 +1000,12 @@
     },
     "done": true
   },
+  "exlinefurniture:recipes/misc/bricks": {
+    "criteria": {
+      "has_ingredient": "2024-04-07 06:52:35 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/blue_kitchen_sink": {
     "criteria": {
       "has_concrete": "2024-01-23 15:28:11 +0000"
@@ -1132,6 +1150,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/black_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_mangrove_kitchen_sink_light": {
     "criteria": {
       "has_top": "2024-01-23 15:28:11 +0000"
@@ -1222,6 +1246,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_bed": {
+    "criteria": {
+      "has_light_gray_wool": "2024-04-07 08:28:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_slab": {
     "criteria": {
       "has_chiseled_quartz_block": "2023-05-26 14:53:16 +0000"
@@ -1300,6 +1330,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/light_blue_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/wooden_sword": {
     "criteria": {
       "has_stick": "2023-03-14 16:15:25 +0000"
@@ -1339,6 +1375,12 @@
   "cfm:recipes/cfm/spruce_coffee_table": {
     "criteria": {
       "has_planks": "2024-01-22 14:27:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_banner": {
+    "criteria": {
+      "has_light_gray_wool": "2024-04-07 08:28:43 +0000"
     },
     "done": true
   },
@@ -1489,6 +1531,12 @@
   "minecraft:recipes/redstone/spruce_pressure_plate": {
     "criteria": {
       "has_planks": "2023-02-09 07:16:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -1673,6 +1721,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_carpet": {
+    "criteria": {
+      "has_light_gray_wool": "2024-04-07 08:28:43 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/brown_kitchen_counter": {
     "criteria": {
       "has_concrete": "2024-01-23 15:28:11 +0000"
@@ -1847,6 +1901,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/light_gray_sofa": {
+    "criteria": {
+      "has_wool": "2024-04-07 08:28:43 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_dark_oak_kitchen_drawer": {
     "criteria": {
       "has_planks": "2024-02-03 14:10:41 +0000"
@@ -1938,6 +1998,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/light_gray_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/mangrove_fence": {
     "criteria": {
       "has_planks": "2023-02-09 07:41:41 +0000"
@@ -1953,6 +2019,12 @@
   "cfm:recipes/cfm/spruce_crate": {
     "criteria": {
       "has_planks": "2024-01-22 14:27:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -2001,6 +2073,12 @@
   "cfm:recipes/cfm/white_kitchen_sink": {
     "criteria": {
       "has_concrete": "2024-01-23 15:28:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purple_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -2079,6 +2157,12 @@
   "minecraft:recipes/building_blocks/polished_andesite_stairs": {
     "criteria": {
       "has_polished_andesite": "2023-03-18 14:37:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_bed": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -2232,6 +2316,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cyan_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/white_dye": {
     "criteria": {
       "has_bone_meal": "2023-02-14 12:25:26 +0000"
@@ -2307,6 +2397,12 @@
   "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_brick_stonecutting": {
     "criteria": {
       "has_end_stone_brick": "2023-05-26 15:08:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -2478,6 +2574,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/white_banner": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-02-08 03:03:13 +0000"
@@ -2547,6 +2649,12 @@
   "minecraft:recipes/redstone/tnt": {
     "criteria": {
       "has_gunpowder": "2023-02-06 08:40:18 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/white_sofa": {
+    "criteria": {
+      "has_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -2637,6 +2745,12 @@
   "minecraft:recipes/redstone/crimson_door": {
     "criteria": {
       "has_planks": "2023-03-24 13:02:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/orange_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -2850,6 +2964,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/white_carpet": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/dark_oak_sign": {
     "criteria": {
       "has_planks": "2023-02-22 14:54:19 +0000"
@@ -3048,6 +3168,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/lime_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/paper": {
     "criteria": {
       "has_reeds": "2023-02-17 02:05:52 +0000"
@@ -3078,6 +3204,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/green_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/warped_button": {
     "criteria": {
       "has_planks": "2023-02-20 15:41:34 +0000"
@@ -3093,6 +3225,12 @@
   "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
     "criteria": {
       "has_stone_bricks": "2023-02-06 07:07:05 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
@@ -3573,6 +3711,12 @@
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2023-02-06 04:51:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pink_wool": {
+    "criteria": {
+      "has_white_wool": "2024-04-07 07:24:10 +0000"
     },
     "done": true
   },
