@@ -1,0 +1,21 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2024-05-05 13:37:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_pine_taiga": "2024-05-05 13:35:16 +0000",
+      "minecraft:taiga": "2024-05-05 13:34:35 +0000",
+      "minecraft:river": "2024-05-05 13:35:37 +0000",
+      "minecraft:forest": "2024-05-05 13:35:34 +0000",
+      "minecraft:flower_forest": "2024-05-05 13:36:20 +0000",
+      "minecraft:meadow": "2024-05-05 13:35:19 +0000",
+      "minecraft:plains": "2024-05-05 13:35:36 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

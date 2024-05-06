@@ -4831,6 +4831,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/red_picket_fence": {
+    "criteria": {
+      "has_concrete": "2024-05-05 08:41:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/scaffolding": {
     "criteria": {
       "has_bamboo": "2023-02-09 04:22:54 +0000"
@@ -5218,6 +5224,12 @@
   "minecraft:recipes/building_blocks/jungle_stairs": {
     "criteria": {
       "has_planks": "2023-02-09 07:41:34 +0000"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/red_concrete": {
+    "criteria": {
+      "has_ingredient": "2024-05-05 08:41:44 +0000"
     },
     "done": true
   },
