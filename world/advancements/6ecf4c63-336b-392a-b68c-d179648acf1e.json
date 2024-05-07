@@ -515,6 +515,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_oak_desk_cabinet": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/lightning_rod_with_villager_no_fire": {
     "criteria": {
       "lightning_rod_with_villager_no_fire": "2024-01-19 07:14:26 +0000"
@@ -908,6 +914,12 @@
   "minecraft:recipes/building_blocks/red_concrete_powder": {
     "criteria": {
       "has_sand": "2023-02-18 13:06:26 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_oak_desk": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -1461,6 +1473,12 @@
   "minecraft:recipes/building_blocks/smooth_sandstone_slab_from_smooth_sandstone_stonecutting": {
     "criteria": {
       "has_smooth_sandstone": "2023-02-10 06:39:08 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/oak_blinds": {
+    "criteria": {
+      "has_log": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -2040,6 +2058,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_oak_bedside_cabinet": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/gold_nugget_from_blasting": {
     "criteria": {
       "has_golden_helmet": "2023-04-13 08:05:38 +0000"
@@ -2391,6 +2415,12 @@
   "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2024-03-22 08:54:39 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/oak_upgraded_fence": {
+    "criteria": {
+      "has_log": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -2982,9 +3012,21 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_oak_coffee_table": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2023-02-06 04:54:13 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_oak_cabinet": {
+    "criteria": {
+      "has_log": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -3210,6 +3252,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_oak_park_bench": {
+    "criteria": {
+      "has_log": "2024-05-06 03:59:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
     "criteria": {
       "has_porkchop": "2023-02-18 13:28:52 +0000"
@@ -3297,6 +3345,12 @@
   "minecraft:recipes/decorations/cyan_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-02-06 04:47:59 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_oak_crate": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -3393,6 +3447,12 @@
   "cfm:recipes/cfm/red_kitchen_counter": {
     "criteria": {
       "has_concrete": "2024-01-24 06:29:18 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_oak_kitchen_counter": {
+    "criteria": {
+      "has_log": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -4171,6 +4231,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/stripped_oak_chair": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/red_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2023-04-14 03:35:53 +0000"
@@ -4186,6 +4252,12 @@
   "cfm:recipes/cfm/stripped_spruce_park_bench": {
     "criteria": {
       "has_log": "2024-02-04 04:39:26 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/stripped_oak_table": {
+    "criteria": {
+      "has_planks": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
@@ -5032,6 +5104,12 @@
   "cfm:recipes/cfm/yellow_picket_gate": {
     "criteria": {
       "has_gate": "2024-02-06 05:29:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2024-05-06 03:59:36 +0000"
     },
     "done": true
   },
