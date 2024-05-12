@@ -1879,6 +1879,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/blue_picket_fence": {
+    "criteria": {
+      "has_concrete": "2024-05-11 03:43:34 +0000"
+    },
+    "done": true
+  },
   "exlinefurniture:recipes/misc/bone": {
     "criteria": {
       "has_ingredient": "2024-01-24 05:55:43 +0000"
@@ -2293,6 +2299,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/netherite_ingot_from_netherite_block": {
+    "criteria": {
+      "has_netherite_block": "2024-05-11 03:04:34 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2023-05-12 14:52:06 +0000"
@@ -2482,6 +2494,12 @@
   "minecraft:recipes/building_blocks/red_sandstone_slab_from_red_sandstone_stonecutting": {
     "criteria": {
       "has_red_sandstone": "2023-03-18 08:52:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/quartz": {
+    "criteria": {
+      "has_nether_quartz_ore": "2024-05-11 03:02:45 +0000"
     },
     "done": true
   },
@@ -3136,6 +3154,12 @@
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2023-04-13 08:05:22 +0000"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/blue_concrete": {
+    "criteria": {
+      "has_ingredient": "2024-05-11 03:43:34 +0000"
     },
     "done": true
   },
@@ -5195,6 +5219,12 @@
   "minecraft:recipes/building_blocks/jungle_slab": {
     "criteria": {
       "has_planks": "2023-02-09 07:41:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/quartz_from_blasting": {
+    "criteria": {
+      "has_nether_quartz_ore": "2024-05-11 03:02:45 +0000"
     },
     "done": true
   },
