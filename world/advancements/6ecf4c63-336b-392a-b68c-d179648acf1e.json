@@ -383,6 +383,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/spruce_kitchen_sink_dark": {
+    "criteria": {
+      "has_bottom": "2024-05-19 15:46:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2023-02-17 08:37:01 +0000"
@@ -1303,6 +1309,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_hedge": {
+    "criteria": {
+      "has_leaves": "2024-05-19 11:45:23 +0000"
+    },
+    "done": true
+  },
   "minecraft:nether/root": {
     "criteria": {
       "entered_nether": "2023-04-06 12:16:10 +0000"
@@ -1777,6 +1789,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/green_picket_fence": {
+    "criteria": {
+      "has_concrete": "2024-05-19 11:29:58 +0000"
+    },
+    "done": true
+  },
   "exlinefurniture:recipes/misc/pink_concrete": {
     "criteria": {
       "has_ingredient": "2024-03-22 08:47:50 +0000"
@@ -2224,6 +2242,12 @@
   "minecraft:recipes/decorations/brown_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2023-04-14 03:35:53 +0000"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/green_concrete": {
+    "criteria": {
+      "has_ingredient": "2024-05-19 11:29:58 +0000"
     },
     "done": true
   },
@@ -2920,6 +2944,12 @@
   "minecraft:recipes/building_blocks/magenta_terracotta": {
     "criteria": {
       "has_terracotta": "2023-05-22 13:17:19 +0000"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/spruce": {
+    "criteria": {
+      "has_ingredient": "2024-05-19 15:46:07 +0000"
     },
     "done": true
   },
