@@ -3229,6 +3229,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/acacia_kitchen_sink_dark": {
+    "criteria": {
+      "has_bottom": "2024-05-20 09:18:17 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2023-02-10 03:47:10 +0000",
@@ -5562,6 +5568,12 @@
   "exlinefurniture:recipes/misc/light_gray_concrete": {
     "criteria": {
       "has_ingredient": "2024-02-19 09:34:55 +0000"
+    },
+    "done": true
+  },
+  "exlinefurniture:recipes/misc/acacia": {
+    "criteria": {
+      "has_ingredient": "2024-05-20 09:18:17 +0000"
     },
     "done": true
   },
