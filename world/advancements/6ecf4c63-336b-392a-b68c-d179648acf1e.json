@@ -305,6 +305,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/emerald_from_smelting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2024-06-19 07:25:15 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coarse_dirt": {
     "criteria": {
       "has_gravel": "2024-02-06 06:43:15 +0000"
@@ -614,6 +620,12 @@
   "cfm:recipes/cfm/pink_grill": {
     "criteria": {
       "has_terracotta": "2024-05-07 09:57:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald_from_blasting_emerald_ore": {
+    "criteria": {
+      "has_emerald_ore": "2024-06-19 07:25:15 +0000"
     },
     "done": true
   },
