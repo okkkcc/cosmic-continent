@@ -46,7 +46,10 @@ public class UpdateDynmap {
 	private static DynmapCommonAPI dynmapCommonAPI;
 	private static org.dynmap.markers.MarkerAPI markerAPI;
 	private static org.dynmap.markers.MarkerSet markerSetAreas;
+	private static org.dynmap.markers.MarkerSet markerSetAreasHidden;
 	private static org.dynmap.markers.MarkerSet markerSetAreasPrivate;
+	private static org.dynmap.markers.MarkerSet markerSetAreasPrivateHidden;
+
 
 	// private org.dynmap.markers.MarkerSet tempMarkerSetAreas = markerAPI.getMarkerSet("mapfrontiers");
 
@@ -62,10 +65,20 @@ public class UpdateDynmap {
 			markerSetAreas=
 				markerAPI.getMarkerSet("frontiers") == null ?
 				markerAPI.createMarkerSet("frontiers", "Frontiers", null, false) : markerAPI.getMarkerSet("frontiers");
+			markerSetAreasHidden=
+				markerAPI.getMarkerSet("frontiers-hidden") == null ?
+				markerAPI.createMarkerSet("frontiers-hidden", "Hidden Frontiers", null, false) : markerAPI.getMarkerSet("frontiers-hidden");
+			markerSetAreasHidden.setHideByDefault(true);
+
 			markerSetAreasPrivate=
 				markerAPI.getMarkerSet("frontiers-private") == null ?
 				markerAPI.createMarkerSet("frontiers-private", "Private Frontiers", null, false) : markerAPI.getMarkerSet("frontiers-private");
-			markerSetAreasPrivate.setHideByDefault(true);
+			markerSetAreasPrivateHidden=
+				markerAPI.getMarkerSet("frontiers-private-hidden") == null ?
+				markerAPI.createMarkerSet("frontiers-private-hidden", "Hidden Private Frontiers", null, false) : markerAPI.getMarkerSet("frontiers-private-hidden");
+			markerSetAreasPrivateHidden.setHideByDefault(true);
+			
+
 		} catch (
 				Exception e) {
 			e.printStackTrace();
@@ -107,7 +120,7 @@ public class UpdateDynmap {
 			zArray[i]=zList.get(i);
 		}
 		String label=data.getName1()+(data.getPersonal()?"(@"+data.getOwner().toString()+")":"");
-		updateDynmap(data.getId().toString(), label, false, worldId.equals("overworld")?"world":worldId, xArray, zArray, color&16777215,data.getPersonal(),false);
+		updateDynmap(data.getId().toString(), label, false, worldId.equals("overworld")?"world":worldId, xArray, zArray, color&16777215,!data.getVisible(),data.getPersonal(),false);
 	}
 	
 	public static void deleteDynmap(FrontierData data){
@@ -117,7 +130,15 @@ public class UpdateDynmap {
         // org.dynmap.markers.MarkerSet markerSetAreas = markerAPI.getMarkerSet("mapfrontiers");
         if(markerSetAreas==null)return;
 
-		markerSetAreas.getAreaMarkers().forEach(marker -> {
+		MarkerSet markerSet;
+		if(data.getVisible()){
+			if(data.getPersonal()) markerSet=markerSetAreasPrivate;
+			else markerSet=markerSetAreas;
+		}else{
+			if(data.getPersonal()) markerSet=markerSetAreasPrivateHidden;
+			else markerSet=markerSetAreasHidden;
+		}
+		markerSet.getAreaMarkers().forEach(marker -> {
 			if (marker.getMarkerID().equals(data.getId().toString())) {
 				marker.deleteMarker();
 			}
@@ -126,7 +147,7 @@ public class UpdateDynmap {
 
 	}
 
-    private static void updateDynmap(String areaId, String label,boolean markup, String worldId, double[] x,double[] z,int color,boolean isPrivate,boolean persistent){
+    private static void updateDynmap(String areaId, String label,boolean markup, String worldId, double[] x,double[] z,int color,boolean isHidden,boolean isPrivate,boolean persistent){
 
         // final MinecraftServer minecraftServer = world.getServer();
         worldId = worldId==null?"world":worldId;
@@ -149,8 +170,19 @@ public class UpdateDynmap {
         
         // org.dynmap.markers.MarkerSet tempMarkerSetAreas = markerAPI.getMarkerSet(areasId);
         // markerSetAreas.createMarker(areaId, label, worldId, areaX, areaY, areaZ, markerAPI.getMarkerIcon(iconKey), false);
-		MarkerSet markerSet=isPrivate?markerSetAreasPrivate:markerSetAreas;
+		MarkerSet markerSet;
+		if(isHidden) 
+			if(isPrivate) markerSet=markerSetAreasPrivateHidden;
+			else markerSet=markerSetAreasHidden;
+		else if(isPrivate) markerSet=markerSetAreasPrivate;
+		else markerSet=markerSetAreas;
+
 		markerSetAreas.getAreaMarkers().forEach(marker -> {
+			if (marker.getMarkerID().equals(areaId)) {
+				marker.deleteMarker();
+			}
+		});
+		markerSetAreasHidden.getAreaMarkers().forEach(marker -> {
 			if (marker.getMarkerID().equals(areaId)) {
 				marker.deleteMarker();
 			}
@@ -160,11 +192,21 @@ public class UpdateDynmap {
 				marker.deleteMarker();
 			}
 		});
+		markerSetAreasPrivateHidden.getAreaMarkers().forEach(marker -> {
+			if (marker.getMarkerID().equals(areaId)) {
+				marker.deleteMarker();
+			}
+		});
         AreaMarker newArea=markerSet.createAreaMarker(areaId, label, false, worldId, x, z, false);
 
         // Test Feature
-        newArea.setFillStyle(0.01, color);
-        newArea.setLineStyle(2, 1, color);
+		if(isHidden){
+			newArea.setFillStyle(0.1, color);
+			newArea.setLineStyle(isPrivate?2:3, 0.5, color);
+		}else{
+			newArea.setFillStyle(0.01, color);
+			newArea.setLineStyle(isPrivate?2:3, 0.6, color);
+		}
         // newArea.set
 
     }
