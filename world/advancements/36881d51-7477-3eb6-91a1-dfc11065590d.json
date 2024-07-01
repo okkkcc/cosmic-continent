@@ -353,6 +353,12 @@
     },
     "done": true
   },
+  "exlinefurniture:recipes/misc/cyan_concrete": {
+    "criteria": {
+      "has_ingredient": "2024-07-01 14:19:18 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/gray_kitchen_sink": {
     "criteria": {
       "has_concrete": "2024-01-23 15:28:11 +0000"
@@ -422,6 +428,12 @@
   "minecraft:recipes/building_blocks/coarse_dirt": {
     "criteria": {
       "has_gravel": "2023-02-21 15:21:43 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/cyan_picket_fence": {
+    "criteria": {
+      "has_concrete": "2024-07-01 14:19:18 +0000"
     },
     "done": true
   },
