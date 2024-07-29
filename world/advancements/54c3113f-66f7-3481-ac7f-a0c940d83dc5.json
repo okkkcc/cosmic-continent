@@ -1321,6 +1321,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/pink_picket_fence": {
+    "criteria": {
+      "has_concrete": "2024-07-29 14:19:20 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/birch_kitchen_drawer": {
     "criteria": {
       "has_planks": "2024-01-29 03:01:36 +0000"
@@ -1891,6 +1897,12 @@
     },
     "done": true
   },
+  "exlinefurniture:recipes/misc/pink_concrete": {
+    "criteria": {
+      "has_ingredient": "2024-07-29 14:19:20 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_warped_kitchen_sink_light": {
     "criteria": {
       "has_top": "2024-01-29 02:51:51 +0000"
@@ -1996,6 +2008,12 @@
   "minecraft:recipes/decorations/pink_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-04-29 18:06:11 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/pink_picket_gate": {
+    "criteria": {
+      "has_concrete": "2024-07-29 14:19:20 +0000"
     },
     "done": true
   },

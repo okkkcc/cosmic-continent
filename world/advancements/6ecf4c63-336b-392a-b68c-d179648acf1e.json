@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/waxed_cut_copper_stairs_from_honeycomb": {
+    "criteria": {
+      "has_cut_copper_stairs": "2024-07-29 13:59:27 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/lever": {
     "criteria": {
       "has_cobblestone": "2024-03-07 08:31:22 +0000"
@@ -4446,6 +4452,12 @@
   "minecraft:recipes/decorations/red_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2023-04-14 03:35:53 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/birch_hedge": {
+    "criteria": {
+      "has_leaves": "2024-07-29 13:41:37 +0000"
     },
     "done": true
   },
