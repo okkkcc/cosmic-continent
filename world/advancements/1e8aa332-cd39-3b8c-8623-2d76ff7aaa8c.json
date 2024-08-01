@@ -293,6 +293,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2024-08-01 05:30:32 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/deepslate_tiles_from_deepslate_bricks_stonecutting": {
     "criteria": {
       "has_deepslate_bricks": "2024-01-20 09:24:43 +0000"
@@ -392,6 +398,12 @@
   "minecraft:recipes/decorations/mossy_stone_brick_wall": {
     "criteria": {
       "has_mossy_stone_bricks": "2024-07-30 08:17:03 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_cabinet": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -575,6 +587,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/jungle_fence": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/polished_deepslate_wall": {
     "criteria": {
       "has_polished_deepslate": "2024-01-20 09:23:57 +0000"
@@ -740,6 +758,12 @@
   "cfm:recipes/cfm/birch_table": {
     "criteria": {
       "has_planks": "2024-01-22 14:39:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_pressure_plate": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -1119,6 +1143,18 @@
     },
     "done": false
   },
+  "cfm:recipes/cfm/jungle_kitchen_counter": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_park_bench": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/stone_sword": {
     "criteria": {
       "has_cobblestone": "2024-07-30 02:57:25 +0000"
@@ -1317,6 +1353,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/jungle_kitchen_sink_dark": {
+    "criteria": {
+      "has_bottom": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/purple_cooler": {
     "criteria": {
       "has_chest": "2024-07-30 03:19:19 +0000"
@@ -1398,6 +1440,12 @@
   "cfm:recipes/cfm/birch_cabinet": {
     "criteria": {
       "has_planks": "2024-01-22 14:39:34 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_crate": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -1623,6 +1671,12 @@
     },
     "done": true
   },
+  "exlinefurniture:recipes/misc/jungle": {
+    "criteria": {
+      "has_ingredient": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/green_cooler": {
     "criteria": {
       "has_chest": "2024-07-30 03:19:19 +0000"
@@ -1656,6 +1710,12 @@
   "cfm:recipes/cfm/light_gray_kitchen_drawer": {
     "criteria": {
       "has_chest": "2024-07-30 03:19:19 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_coffee_table": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -1695,6 +1755,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/jungle_trapdoor": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/oak_blinds": {
     "criteria": {
       "has_log": "2024-07-30 02:56:27 +0000"
@@ -1704,6 +1770,12 @@
   "cfm:recipes/cfm/birch_park_bench": {
     "criteria": {
       "has_planks": "2024-01-22 14:39:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_button": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -1878,6 +1950,12 @@
   "minecraft:recipes/building_blocks/andesite_stairs": {
     "criteria": {
       "has_andesite": "2024-01-22 05:06:33 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_desk_cabinet": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -2079,6 +2157,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/jungle_table": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_warped_kitchen_drawer": {
     "criteria": {
       "has_chest": "2024-07-30 03:19:19 +0000"
@@ -2112,6 +2196,12 @@
   "cfm:recipes/cfm/oak_park_bench": {
     "criteria": {
       "has_planks": "2024-07-30 02:56:20 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_chair": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -2325,6 +2415,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/jungle_sign": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_terracotta": {
     "criteria": {
       "has_terracotta": "2024-01-20 09:24:56 +0000"
@@ -2427,6 +2523,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_slab": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "ironchest:recipes/ironchest/upgrades/diamond_to_crystal_chest_upgrade": {
     "criteria": {
       "has_glass": "2023-05-11 16:22:20 +0000"
@@ -2436,6 +2538,12 @@
   "minecraft:recipes/redstone/oak_button": {
     "criteria": {
       "has_planks": "2023-05-11 16:21:47 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/jungle_bedside_cabinet": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
@@ -2505,6 +2613,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/jungle_desk": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/birch_mail_box": {
     "criteria": {
       "has_chest": "2024-07-30 03:19:19 +0000"
@@ -2565,6 +2679,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_stairs": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2023-05-10 03:48:57 +0000"
@@ -2574,6 +2694,18 @@
   "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2024-01-22 05:06:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_door": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/jungle_fence_gate": {
+    "criteria": {
+      "has_planks": "2024-08-01 07:49:48 +0000"
     },
     "done": true
   },
