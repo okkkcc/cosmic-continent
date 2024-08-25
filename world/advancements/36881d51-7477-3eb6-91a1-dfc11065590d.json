@@ -65,6 +65,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_gray_dye_from_white_tulip": {
+    "criteria": {
+      "has_white_tulip": "2024-08-25 03:25:27 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/yellow_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-02-08 03:03:13 +0000"
