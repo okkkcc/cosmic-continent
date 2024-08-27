@@ -1999,6 +1999,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cut_red_sandstone_slab": {
+    "criteria": {
+      "has_cut_red_sandstone": "2024-08-27 14:16:54 +0000"
+    },
+    "done": true
+  },
   "minecraft:story/upgrade_tools": {
     "criteria": {
       "stone_pickaxe": "2023-02-06 04:41:09 +0000"
@@ -5622,6 +5628,12 @@
   "cfm:recipes/cfm/stripped_jungle_coffee_table": {
     "criteria": {
       "has_planks": "2024-02-06 06:22:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_red_sandstone_slab_from_cut_red_sandstone_stonecutting": {
+    "criteria": {
+      "has_cut_red_sandstone": "2024-08-27 14:16:54 +0000"
     },
     "done": true
   },
