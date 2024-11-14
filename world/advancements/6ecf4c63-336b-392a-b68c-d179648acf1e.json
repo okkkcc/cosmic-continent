@@ -689,6 +689,12 @@
     },
     "done": true
   },
+  "cfm:recipes/cfm/magenta_grill": {
+    "criteria": {
+      "has_terracotta": "2024-11-14 15:15:59 +0000"
+    },
+    "done": true
+  },
   "usefulrailroads:recipes/highspeed_rail": {
     "criteria": {
       "has_minecart": "2023-02-17 08:20:34 +0000"
@@ -1004,6 +1010,12 @@
   "cfm:recipes/cfm/stripped_oak_mail_box": {
     "criteria": {
       "has_chest": "2024-02-20 03:36:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_glazed_terracotta": {
+    "criteria": {
+      "has_magenta_terracotta": "2024-11-14 15:15:59 +0000"
     },
     "done": true
   },
