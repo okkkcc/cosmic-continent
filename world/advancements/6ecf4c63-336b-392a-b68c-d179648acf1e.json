@@ -827,6 +827,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_bed": {
+    "criteria": {
+      "has_light_gray_wool": "2024-12-07 10:49:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_slab": {
     "criteria": {
       "has_quartz_pillar": "2023-03-10 14:00:37 +0000"
@@ -1172,6 +1178,12 @@
   "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2023-03-17 07:14:36 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/light_gray_sofa": {
+    "criteria": {
+      "has_wool": "2024-12-07 10:49:01 +0000"
     },
     "done": true
   },
@@ -3703,6 +3715,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_banner": {
+    "criteria": {
+      "has_light_gray_wool": "2024-12-07 10:49:01 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/red_kitchen_counter": {
     "criteria": {
       "has_concrete": "2024-01-24 06:29:18 +0000"
@@ -4008,6 +4026,12 @@
   "cfm:recipes/cfm/green_kitchen_drawer": {
     "criteria": {
       "has_concrete": "2024-01-24 06:29:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_carpet": {
+    "criteria": {
+      "has_light_gray_wool": "2024-12-07 10:49:01 +0000"
     },
     "done": true
   },
