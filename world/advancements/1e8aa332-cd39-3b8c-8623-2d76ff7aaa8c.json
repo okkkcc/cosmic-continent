@@ -1067,6 +1067,12 @@
     },
     "done": true
   },
+  "usefulrailroads:recipes/fuel/track_builder/coals": {
+    "criteria": {
+      "has_ingredient": "2025-01-14 15:25:52 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/oak_trapdoor": {
     "criteria": {
       "has_planks": "2023-05-11 16:21:47 +0000"
@@ -1452,6 +1458,12 @@
   "cfm:recipes/cfm/birch_cabinet": {
     "criteria": {
       "has_planks": "2024-01-22 14:39:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye_from_lily_of_the_valley": {
+    "criteria": {
+      "has_lily_of_the_valley": "2025-01-14 15:01:13 +0000"
     },
     "done": true
   },
@@ -2358,6 +2370,12 @@
   "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2024-01-22 05:06:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-01-14 15:25:52 +0000"
     },
     "done": true
   },
