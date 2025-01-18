@@ -809,6 +809,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_glazed_terracotta": {
+    "criteria": {
+      "has_light_gray_terracotta": "2025-01-18 10:59:19 +0000"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/pink_cooler": {
     "criteria": {
       "has_chest": "2024-02-20 03:36:18 +0000"
@@ -2188,6 +2194,12 @@
   "cfm:recipes/cfm/light_blue_picket_fence": {
     "criteria": {
       "has_concrete": "2024-02-19 09:37:11 +0000"
+    },
+    "done": true
+  },
+  "cfm:recipes/cfm/light_gray_grill": {
+    "criteria": {
+      "has_terracotta": "2025-01-18 10:59:19 +0000"
     },
     "done": true
   },
