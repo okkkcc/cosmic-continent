@@ -1,0 +1,96 @@
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 2025-01-21 07:34:07
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:626) ~[server-1.19.2-20220805.130853-srg.jar%23135!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23135!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Linux (amd64) version 6.8.0-51-generic
+	Java Version: 21.0.5, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 469372496 bytes (447 MiB) / 801112064 bytes (764 MiB) up to 3221225472 bytes (3072 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) N100
+	Identifier: Intel64 Family 6 Model 190 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 0.77
+	Number of physical packages: 4
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: SVGA II Adapter
+	Graphics card #0 vendor: VMware (0x15ad)
+	Graphics card #0 VRAM (MB): 128.00
+	Graphics card #0 deviceId: 0x0405
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): -0.00
+	Memory slot #0 type: DRAM
+	Memory slot #1 capacity (MB): 2048.00
+	Memory slot #1 clockSpeed (GHz): -0.00
+	Memory slot #1 type: DRAM
+	Virtual memory max (MB): 6876.41
+	Virtual memory used (MB): 1797.04
+	Swap memory total (MB): 3914.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 1 total; -Xmx3G
+	Server Running: true
+	Data Packs: vanilla, file/bukkit (incompatible), mod:luckperms (incompatible), mod:forge, mod:architectury (incompatible), mod:usefulrailroads, mod:uteamcore, mod:mtr (incompatible), mod:simpleplanes (incompatible), mod:ironchest (incompatible), mod:dynmap (incompatible), mod:flywheel (incompatible), mod:effortlessbuilding, mod:cfm (incompatible), mod:exlinefurniture, mod:journeymap (incompatible), mod:worldedit (incompatible), mod:packetfixer (incompatible), mod:starlight (incompatible), mod:mtrsteamloco (incompatible), mod:ctm (incompatible), mod:mapfrontiers (incompatible)
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.4.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.4.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.4.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.4.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.4.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		server-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: NOSIGNATURE
+		Dynmap-3.7-beta-4-forge-1.19.2.jar                |Dynmap                        |dynmap                        |3.7-beta-4-935      |DONE      |Manifest: NOSIGNATURE
+		worldedit-mod-7.2.12.jar                          |WorldEdit                     |worldedit                     |7.2.12+6240-87f4ae1 |DONE      |Manifest: NOSIGNATURE
+		useful_railroads-1.19.2-1.5.1.47.jar              |Useful Railroads              |usefulrailroads               |1.5.1.47            |DONE      |Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		u_team_core-1.19.2-4.4.3.260.jar                  |U Team Core                   |uteamcore                     |4.4.3.260           |DONE      |Manifest: f4:a6:0b:ee:cb:8a:1a:ea:9f:9d:45:91:8f:8b:b3:ae:26:f3:bf:05:86:1d:90:9e:f6:32:2a:1a:ed:1d:ce:b0
+		starlight-1.1.1+forge.cf5b10b.jar                 |Starlight                     |starlight                     |1.1.1+forge.a3aea74 |DONE      |Manifest: NOSIGNATURE
+		simpleplanes-1.19.2-5.2.2.jar                     |Simple Planes                 |simpleplanes                  |1.19.2-5.2.2        |DONE      |Manifest: NOSIGNATURE
+		cfm-7.0.0-pre35-1.19.2.jar                        |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre35         |DONE      |Manifest: NOSIGNATURE
+		architectury-6.6.92-forge.jar                     |Architectury                  |architectury                  |6.6.92              |DONE      |Manifest: NOSIGNATURE
+		MTR-forge-1.19.2-3.2.2-hotfix-1.jar               |Minecraft Transit Railway     |mtr                           |1.19.2-3.2.2-hotfix-|DONE      |Manifest: NOSIGNATURE
+		LuckPerms-Forge-5.4.66.jar                        |LuckPerms                     |luckperms                     |5.4.66              |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.4.0-universal.jar                 |Forge                         |forge                         |43.4.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		packetfixer-forge-1.4.2-1.19-to-1.20.1.jar        |Packet Fixer                  |packetfixer                   |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.19.2-0.6.10-20.jar               |Flywheel                      |flywheel                      |0.6.10-20           |DONE      |Manifest: NOSIGNATURE
+		MTR-NTE-0.5.1+1.19.2.jar                          |Nemo's Transit Expansion      |mtrsteamloco                  |0.5.1+1.19.2        |DONE      |Manifest: NOSIGNATURE
+		MapFrontiers-1.19.2-2.5.3.jar                     |MapFrontiers                  |mapfrontiers                  |1.19.2-2.5.3        |DONE      |Manifest: NOSIGNATURE
+		exlinefurniture-forge-1.19.2-v2.1.25.jar          |Exline's Furniture Mod        |exlinefurniture               |2.1.25              |DONE      |Manifest: NOSIGNATURE
+		effortlessbuilding-1.19.2-3.5-all.jar             |Effortless Building           |effortlessbuilding            |3.5                 |DONE      |Manifest: NOSIGNATURE
+		journeymap-1.19.2-5.9.8-forge.jar                 |Journeymap                    |journeymap                    |5.9.8               |DONE      |Manifest: NOSIGNATURE
+		ironchest-1.19.2-14.2.7.jar                       |Iron Chests                   |ironchest                     |1.19.2-14.2.7       |DONE      |Manifest: NOSIGNATURE
+		CTM-1.19.2-1.1.6+8.jar                            |ConnectedTexturesMod          |ctm                           |1.19.2-1.1.6+8      |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 01443286-3568-43f9-b39a-db310ad8f0ea
+	FML: 43.4
+	Forge: net.minecraftforge:43.4.0
